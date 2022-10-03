@@ -1,24 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_Converter_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papers.co-sg79-green-money-galeria-gradation-blur-34-iphone6-plus-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="0wq-b1-Qz0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="917"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecy-60-lVb">
+                                <rect key="frame" x="68" y="44" width="279" height="71"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="ln6-XI-7pf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAD:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-7c-dQK">
+                                <rect key="frame" x="68" y="134" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="T1N-md-gnE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CHF:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYA-I8-Ymq">
+                                <rect key="frame" x="68" y="209" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="8Mq-2d-MPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GBP:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tow-7q-HJe">
+                                <rect key="frame" x="68" y="290" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="itv-Of-viv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="USD:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-M4-agG">
+                                <rect key="frame" x="68" y="471" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="SYZ-nq-kgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TRY:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-cH-XoD">
+                                <rect key="frame" x="68" y="562" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="GH3-eI-8z6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfF-qw-8OK">
+                                <rect key="frame" x="137" y="667" width="140" height="79"/>
+                                <color key="tintColor" red="0.2352941036" green="0.50196081400000003" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CONVERT">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="converButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mcq-yy-Ti0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="JPY:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-V2-PYI">
+                                <rect key="frame" x="68" y="381" width="279" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="5cw-uO-lsh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ecy-60-lVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="0oQ-oj-Vpr"/>
+                            <constraint firstItem="Ug6-M4-agG" firstAttribute="top" secondItem="xNY-V2-PYI" secondAttribute="bottom" constant="53" id="3a7-fi-Fpm"/>
+                            <constraint firstItem="0wq-b1-Qz0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5L2-te-Ijv"/>
+                            <constraint firstItem="xNY-V2-PYI" firstAttribute="leading" secondItem="Ug6-M4-agG" secondAttribute="leading" id="5SU-5B-t6g"/>
+                            <constraint firstItem="Qjq-cH-XoD" firstAttribute="top" secondItem="Ug6-M4-agG" secondAttribute="bottom" constant="54" id="7xA-JS-Qxl"/>
+                            <constraint firstItem="ZK0-7c-dQK" firstAttribute="leading" secondItem="yYA-I8-Ymq" secondAttribute="leading" id="8oM-sr-ctj"/>
+                            <constraint firstItem="Ug6-M4-agG" firstAttribute="leading" secondItem="Qjq-cH-XoD" secondAttribute="leading" id="BC0-cb-aQz"/>
+                            <constraint firstItem="yYA-I8-Ymq" firstAttribute="trailing" secondItem="tow-7q-HJe" secondAttribute="trailing" id="BuE-Gn-EoW"/>
+                            <constraint firstItem="0wq-b1-Qz0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="HGv-kZ-chM"/>
+                            <constraint firstItem="TfF-qw-8OK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="O5S-1o-NTC"/>
+                            <constraint firstItem="tow-7q-HJe" firstAttribute="trailing" secondItem="xNY-V2-PYI" secondAttribute="trailing" id="PvA-qF-GqM"/>
+                            <constraint firstItem="yYA-I8-Ymq" firstAttribute="leading" secondItem="tow-7q-HJe" secondAttribute="leading" id="SQG-nA-doF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0wq-b1-Qz0" secondAttribute="bottom" constant="-55" id="XXf-Iu-q8s"/>
+                            <constraint firstItem="yYA-I8-Ymq" firstAttribute="top" secondItem="ZK0-7c-dQK" secondAttribute="bottom" constant="38" id="Yra-fC-XNk"/>
+                            <constraint firstItem="Ecy-60-lVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZEl-65-vPU"/>
+                            <constraint firstItem="xNY-V2-PYI" firstAttribute="trailing" secondItem="Ug6-M4-agG" secondAttribute="trailing" id="bK0-f7-Td7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TfF-qw-8OK" secondAttribute="bottom" constant="116" id="cVk-J1-T5A"/>
+                            <constraint firstItem="0wq-b1-Qz0" firstAttribute="centerX" secondItem="Ecy-60-lVb" secondAttribute="centerX" id="eS6-ir-cXl"/>
+                            <constraint firstItem="ZK0-7c-dQK" firstAttribute="trailing" secondItem="yYA-I8-Ymq" secondAttribute="trailing" id="fFH-xC-Q11"/>
+                            <constraint firstItem="Ecy-60-lVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ls6-Rw-eBI"/>
+                            <constraint firstItem="Ug6-M4-agG" firstAttribute="trailing" secondItem="Qjq-cH-XoD" secondAttribute="trailing" id="oxn-RG-O7Y"/>
+                            <constraint firstItem="ZK0-7c-dQK" firstAttribute="top" secondItem="Ecy-60-lVb" secondAttribute="bottom" constant="19" id="q6h-yv-Uvl"/>
+                            <constraint firstItem="Ecy-60-lVb" firstAttribute="trailing" secondItem="ZK0-7c-dQK" secondAttribute="trailing" id="qwL-Fu-uc7"/>
+                            <constraint firstItem="Ecy-60-lVb" firstAttribute="leading" secondItem="ZK0-7c-dQK" secondAttribute="leading" id="rOH-Dk-aoR"/>
+                            <constraint firstItem="Qjq-cH-XoD" firstAttribute="centerX" secondItem="TfF-qw-8OK" secondAttribute="centerX" id="s3S-jb-zwV"/>
+                            <constraint firstItem="xNY-V2-PYI" firstAttribute="top" secondItem="tow-7q-HJe" secondAttribute="bottom" constant="54" id="tSa-Rt-0wy"/>
+                            <constraint firstItem="tow-7q-HJe" firstAttribute="leading" secondItem="xNY-V2-PYI" secondAttribute="leading" id="uUT-iT-PbN"/>
+                            <constraint firstItem="TfF-qw-8OK" firstAttribute="top" secondItem="Qjq-cH-XoD" secondAttribute="bottom" constant="68" id="vzg-eF-Dti"/>
+                            <constraint firstItem="tow-7q-HJe" firstAttribute="top" secondItem="yYA-I8-Ymq" secondAttribute="bottom" constant="44" id="xAr-pU-cWi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cadLabel" destination="ZK0-7c-dQK" id="lRl-OI-hXG"/>
+                        <outlet property="chfLabel" destination="yYA-I8-Ymq" id="m1w-SX-D6L"/>
+                        <outlet property="gbpLabel" destination="tow-7q-HJe" id="fyP-IU-qaZ"/>
+                        <outlet property="jpyLabel" destination="xNY-V2-PYI" id="s2l-vb-iUi"/>
+                        <outlet property="tryLabel" destination="Qjq-cH-XoD" id="M52-LJ-5tC"/>
+                        <outlet property="usdLabel" destination="Ug6-M4-agG" id="x3T-o2-biA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="papers.co-sg79-green-money-galeria-gradation-blur-34-iphone6-plus-wallpaper" width="1242" height="2208"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
